@@ -1,0 +1,7 @@
+appId: ir.tgbs.peccharge.web
+---
+- launchApp:
+    clearState: false
+- tapOn:
+    id: "left_button"
+    index: 1
