@@ -1,0 +1,19 @@
+appId: ir.tgbs.peccharge.web
+---
+- launchApp:
+    clearState: true
+
+- tapOn:
+    id: edtMobile
+- inputText: "09124168652"
+- tapOn:
+    id: btnRegister
+
+- tapOn:
+    id: edtMobile
+- inputText: "123456"
+- tapOn:
+    id: btnRegister
+- back
+
+

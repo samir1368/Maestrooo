@@ -1,0 +1,105 @@
+appId: ir.tgbs.peccharge.web
+---
+- launchApp:
+    clearState: false
+
+- tapOn:
+    id: "left_button"
+    index: 0
+ 
+- tapOn: "تایید و ادامه"
+
+- tapOn:
+    id: "mobileNumber"
+- inputText: "09029868952"
+- tapOn: "تایید و ادامه"
+
+- tapOn:
+    id: "amount"
+- inputText: ""
+- tapOn: "تایید و ادامه"
+
+- tapOn:
+    id: "amount"
+- eraseText
+
+
+
+- tapOn:
+    id: "amount"
+- inputText: "100"
+- tapOn: "تایید و ادامه"
+- tapOn:
+    id: "amount"
+- eraseText
+
+- tapOn:
+    id: "amount"
+- inputText: "2000000"
+- tapOn: "تایید و ادامه"
+- back
+
+- tapOn:
+    id: "amount"
+- eraseText
+- tapOn:
+    id: "amount"
+- inputText: "199990"
+- tapOn: "تایید و ادامه"
+
+- tapOn:
+    id: "amount"
+- eraseText
+
+- tapOn:
+    id: "amount"
+- inputText: "9999999999"
+- tapOn: "تایید و ادامه"
+- back
+
+- tapOn:
+    id: "rightelAvalButton"
+
+- tapOn: "تایید و ادامه"
+
+
+- tapOn:
+    id: "mobileNumber"
+- eraseText
+- tapOn:
+    id: "mobileNumber"
+- inputText: "09124168652"
+- tapOn: "200,000 ریال"
+- tapOn: "تایید و ادامه"
+- back
+- tapOn:
+    id: "irancellButton"
+- tapOn:
+    id: "hamrahAvalButton"
+
+- tapOn:
+    id: "irancellButton"
+
+- tapOn:
+   id: "contactsButton"
+- back
+
+- tapOn:
+   id: "imgHelp"
+- back
+
+- tapOn:
+    id: "mobileNumber"
+- inputText: "09029868952"
+- tapOn: "200,000 ریال"
+- tapOn: "تایید و ادامه"
+- back
+
+
+
+
+
+
+
+
+
