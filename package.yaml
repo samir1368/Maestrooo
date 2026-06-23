@@ -5,3 +5,69 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "left_button"
     index: 1
+- assertVisible:
+    id: "mobileNumber"
+
+- tapOn:
+    id: "mobileNumber"
+- eraseText 
+
+- tapOn: "تایید و ادامه"
+- assertVisible:
+    id: "creditSimButton"
+
+- tapOn: 
+    id: "creditSimButton"
+- assertVisible:
+    id: "container"
+
+- tapOn:
+    id: "mobileNumber"
+- inputText: "09029868952"
+
+
+- assertVisible:
+    id: "estelamButton"
+
+- tapOn: "تایید و ادامه"
+- back
+
+
+- tapOn:
+    id: "contactsButton"
+
+
+- tapOn:
+    id: "main"
+
+- assertVisible: "Select Contact"
+- runFlow:
+    when:
+      visible: "Just once"
+      
+    commands:
+        - tapOn: "Just once"
+        - assertVisible: "Just once"
+
+
+- runFlow:
+    when:
+      notVisible: "Just once"
+      
+    commands:
+        - tapOn: ".*s.*"
+       
+
+
+
+- tapOn: "تایید و ادامه"
+- tapOn: 
+    id: "creditSimButton"
+
+
+
+#- tapOn: "تایید و ادامه"
+#- tapOn:
+   # id: "homeSimButton"
+
+
