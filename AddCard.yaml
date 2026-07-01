@@ -1,0 +1,18 @@
+appId: ir.tgbs.peccharge.web
+---
+
+- tapOn:
+    id: cardName
+- inputText: "sami"
+- tapOn:
+    id: cardNumber
+- inputText: "6221061237612546"
+
+- tapOn:
+    id: exp_m
+- inputText: "02"
+- tapOn:
+    id: exp_y
+- inputText: "02"
+- tapOn:
+    id: txtDone

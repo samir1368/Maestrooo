@@ -1,0 +1,47 @@
+appId: ir.tgbs.peccharge.web
+---
+- launchApp:
+    clearState: false
+- tapOn:
+    id: "mid_button"
+    index: 1
+
+- tapOn:
+    id: "viewBanks"
+- back
+
+- tapOn:
+    id: "sourceCardView"
+
+- assertVisible: 
+    id: "newCard"
+
+- runFlow:
+    when:
+       visible: "انتخاب کارت"
+    commands: 
+    file: selectCard.yaml
+
+- runFlow:
+    when:
+       visible: 
+        id: "sourceCardView"
+    commands:
+        - tapOn :
+            id : "sourceCardView"
+
+- assertVisible:
+    id: "main"
+- tapOn:
+    id: "main"
+    index: 1
+
+#- tapOn:
+ #   id: "imgHelp"
+#- back
+
+
+#- tapOn: "تایید و ادامه"
+
+
+#

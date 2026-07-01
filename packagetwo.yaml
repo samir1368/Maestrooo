@@ -1,0 +1,57 @@
+appId: ir.tgbs.peccharge.web
+---
+- tapOn: 
+    id: "creditSimButton"
+- tapOn:
+    id: "filter"
+- assertVisible:
+    id: "recyclerView"
+
+- tapOn:
+    id: "main"
+    index: 1
+- assertVisible:
+    id: "recycler"
+
+- tapOn:
+    id: "rvItem"
+    index: 1
+- tapOn:
+    id: "rvItem"
+    index: 2
+- tapOn:
+    id: "rvItem"
+    index: 3
+- runFlow:
+    when:
+      visible: "روزانه"
+      
+    commands:
+        - tapOn: "روزانه"
+
+
+- tapOn:
+    id: "filter_close"
+
+
+
+- runFlow:
+    when:
+      visible: "همه"
+      
+    commands:
+        - tapOn: "همه"
+- assertVisible:
+    id: "bestSellerSwitch"
+- tapOn:
+    id: "bestSellerSwitch"
+#- scroll    
+- assertVisible:
+    id:  "boltonSubTypes"
+- tapOn:
+    id: "main"
+    index: 1
+
+        
+
+

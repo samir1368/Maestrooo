@@ -47,7 +47,7 @@ appId: ir.tgbs.peccharge.web
       
     commands:
         - tapOn: "Just once"
-        - assertVisible: "Just once"
+       
 
 
 - runFlow:
@@ -61,10 +61,14 @@ appId: ir.tgbs.peccharge.web
 
 
 - tapOn: "تایید و ادامه"
-- tapOn: 
-    id: "creditSimButton"
+#- tapOn: 
+ #   id: "creditSimButton"
 
-
+- runFlow:
+    when:
+      visible: "creditSimButton"
+     # visible:  "تایید و ادامه"
+    file: packagetwo.yaml
 
 #- tapOn: "تایید و ادامه"
 #- tapOn:

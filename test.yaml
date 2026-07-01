@@ -1,0 +1,18 @@
+appId: ir.tgbs.peccharge.web
+---
+- launchApp:
+    clearState: false
+- tapOn:
+    id: "left_button"
+    index: 1
+- assertVisible:
+    id: "mobileNumber"
+- tapOn: "تایید و ادامه"
+#- tapOn: 
+ #   id: "creditSimButton"
+
+- runFlow:
+    when:
+      visible: "سیم کارت اعتباری"
+     # visible:  "تایید و ادامه"
+    file: packagetwo.yaml

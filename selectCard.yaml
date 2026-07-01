@@ -1,0 +1,13 @@
+appId: ir.tgbs.peccharge.web
+---
+
+- tapOn:
+    id: "newCard"
+
+- runFlow:
+    when:
+       visible: "افزودن کارت"
+    commands: 
+    file: addCard.yaml
+
+        
