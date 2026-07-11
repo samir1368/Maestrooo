@@ -15,4 +15,4 @@ appId: ir.tgbs.peccharge.web
     when:
       visible: "سیم کارت اعتباری"
      # visible:  "تایید و ادامه"
-    file: packagetwo.yaml
+    file: package/packagetwo.yaml

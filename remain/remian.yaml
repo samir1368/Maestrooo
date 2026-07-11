@@ -20,7 +20,7 @@ appId: ir.tgbs.peccharge.web
     when:
        visible: "انتخاب کارت"
     commands: 
-    file: selectCard.yaml
+    file: ../bsh/selectCard.yaml
 
 - runFlow:
     when:
