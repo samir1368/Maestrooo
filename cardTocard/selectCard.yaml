@@ -1,0 +1,46 @@
+appId: ir.tgbs.peccharge.web
+---
+
+
+- tapOn:
+    id: "sourceCardView"
+
+- runFlow:
+    when:
+      visible:
+        "کارت مبدا جدید"
+  
+    file: sourceCard.yaml
+  
+
+- runFlow:
+    when:
+      visible:
+        "کارت مقصد جدید"
+    file: destCard.yaml
+
+- runFlow:
+    when:
+      notVisible:
+        id: "number_tv"
+    commands:
+      - tapOn:
+          id: "txtDone"
+
+- runFlow:
+    when:
+      visible:
+        id: "number_tv"
+    commands:
+      - tapOn:
+          id: "number_tv"
+          index: 0
+# - back
+
+- runFlow:
+    when:
+      visible: "ثبت کارت در شاپرک"
+    commands:
+      - tapOn:
+          id: "rlCall"
+

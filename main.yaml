@@ -1,0 +1,54 @@
+appId: ir.tgbs.peccharge.web
+---
+- launchApp:
+    clearState: false
+
+#package charge
+- assertVisible:
+    id: "left_button"
+    index: 0
+- runFlow:
+    when:
+       visible: 
+          id: "left_button"
+          index: 0
+    commands: 
+    file: D:\test\Maestrooo\charge\charge.yaml
+
+#package service
+- assertVisible:
+    id: "left_button"
+    index: 1
+- runFlow:
+    when:
+       visible: 
+          id: "left_button"
+          index: 1
+    commands: 
+    file: D:\test\Maestrooo\package\package.yaml
+
+#remain service
+- assertVisible:
+    id: "mid_button"
+    index: 1
+- runFlow:
+    when:
+       visible: 
+         id: "mid_button"
+         index: 1
+    commands: 
+    file: D:\test\Maestrooo\remain\remian.yaml
+
+#package card to card
+- assertVisible:
+    id: "right_icon"
+    index: 0
+- runFlow:
+    when:
+       visible: 
+          id: "right_icon"
+          index: 0
+    commands: 
+    file: D:\test\Maestrooo\cardTocard\cardTocard.yaml
+
+

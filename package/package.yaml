@@ -1,7 +1,6 @@
 appId: ir.tgbs.peccharge.web
 ---
-- launchApp:
-    clearState: false
+
 - tapOn:
     id: "left_button"
     index: 1
@@ -11,6 +10,7 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "mobileNumber"
 - eraseText 
+- eraseText: 100
 
 - tapOn: "تایید و ادامه"
 - assertVisible:
@@ -55,7 +55,7 @@ appId: ir.tgbs.peccharge.web
       notVisible: "Just once"
       
     commands:
-        - tapOn: ".*s.*"
+        - tapOn: ".*Sa.*"
        
 
 
@@ -66,7 +66,8 @@ appId: ir.tgbs.peccharge.web
 
 - runFlow:
     when:
-      visible: "creditSimButton"
+      visible: 
+        id : "creditSimButton"
      # visible:  "تایید و ادامه"
     file: packagetwo.yaml
 

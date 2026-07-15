@@ -1,0 +1,32 @@
+appId: ir.tgbs.peccharge.web
+---
+
+
+- tapOn:
+    id: "amountView"
+- inputText: "2"
+
+- tapOn:
+    id: "butonEstelam"
+- assertVisible:
+    id: "sheet_constraint_layout"
+- tapOn:
+    id: "cancel"
+
+- eraseText
+- tapOn:
+    id: "amountView"
+- inputText: "2000000000000"
+- tapOn:
+    id: "butonEstelam"
+
+- assertVisible:
+    id: "sheet_constraint_layout"
+- tapOn:
+    id: "cancel"
+
+- eraseText
+- tapOn:
+    id: "amountView"
+- inputText: "2000000"
+

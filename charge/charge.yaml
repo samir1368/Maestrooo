@@ -1,12 +1,9 @@
 appId: ir.tgbs.peccharge.web
 ---
-- launchApp:
-    clearState: false
-
 - tapOn:
     id: "left_button"
     index: 0
- 
+
 - tapOn: "تایید و ادامه"
 
 - tapOn:
@@ -65,10 +62,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "mobileNumber"
-- eraseText
-- tapOn:
-    id: "mobileNumber"
-- inputText: "09124168652"
+
 - tapOn: "200,000 ریال"
 - tapOn: "تایید و ادامه"
 - back

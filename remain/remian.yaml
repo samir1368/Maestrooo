@@ -1,11 +1,10 @@
 appId: ir.tgbs.peccharge.web
 ---
-- launchApp:
-    clearState: false
+
+
 - tapOn:
     id: "mid_button"
     index: 1
-
 - tapOn:
     id: "viewBanks"
 - back
@@ -35,7 +34,7 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "main"
     index: 1
-
+- back
 #- tapOn:
  #   id: "imgHelp"
 #- back

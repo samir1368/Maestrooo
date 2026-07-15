@@ -1,0 +1,50 @@
+appId: ir.tgbs.peccharge.web
+---
+
+- runFlow:
+    when:
+      visible: "انتخاب کارت مبدا"
+
+    file: selectCard.yaml
+
+- runFlow:
+    when:
+      visible: "انتخاب کارت مقصد"
+    commands:
+      - tapOn:
+         id: "destinationCardView"
+    
+
+- runFlow:
+    when:
+      visible: "کارت مقصد جدید"
+
+    file: selectCard.yaml
+
+- runFlow:
+    when:
+      notVisible: "انتخاب کارت مبدا"
+    commands:
+      - runFlow:
+          when:
+            notVisible: "انتخاب کارت مقصد"
+          file: checkAmount.yaml
+
+
+
+#- tapOn:
+ #   id: "butonEstelam"
+- assertVisible:
+    id: "expandBtn"
+- tapOn:
+    id: "expandBtn"
+- tapOn:
+    id: "descView"
+- inputText: "2000000 hjk khj kjh jhkj khjh kjh kjh jkh jh kh hjkh jh jhjhjhyg yyu y yyg jjhg hjgjhg hgy ygyug yugyg ug"
+
+
+- tapOn:
+    id: "butonEstelam"
+
+
+
