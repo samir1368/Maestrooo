@@ -1,6 +1,8 @@
 appId: ir.tgbs.peccharge.web
 ---
-
+- tapOn:
+    id: "right_icon"
+    index: 0
 - runFlow:
     when:
       visible: "انتخاب کارت مبدا"
@@ -21,14 +23,12 @@ appId: ir.tgbs.peccharge.web
 
     file: selectCard.yaml
 
+
+
 - runFlow:
     when:
-      notVisible: "انتخاب کارت مبدا"
-    commands:
-      - runFlow:
-          when:
-            notVisible: "انتخاب کارت مقصد"
-          file: checkAmount.yaml
+      visible: "مبلغ انتقال"
+    file: D:\test\Maestrooo\cardTocard\checkAmount.yaml
 
 
 
@@ -45,6 +45,8 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "butonEstelam"
+- back
+- back
 
 
 

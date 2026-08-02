@@ -1,0 +1,26 @@
+appId: com.example.app
+---
+
+- tapOn: 
+   id: "main"
+- tapOn: 
+   id: "edtBillId"
+- inputText: "1561377299219"
+- tapOn: 
+   id: "save"
+- runFlow:
+    when:
+       visible: "نام قبض"
+   
+    file: D:\test\Maestrooo\bill\saveBill.yaml
+
+- runFlow:
+    when:
+       visible: "قبض آب"
+    commands: 
+        - back
+- runFlow:
+    when:
+       visible: "قبض آب"
+    commands: 
+        - back

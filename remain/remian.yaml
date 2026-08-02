@@ -34,13 +34,17 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "main"
     index: 1
-- back
+
 #- tapOn:
  #   id: "imgHelp"
 #- back
 
 
-#- tapOn: "تایید و ادامه"
+- tapOn: "تایید و ادامه"
+- assertVisible: "اطلاعات کارت"
+- back
+- back
+   
 
 
 #

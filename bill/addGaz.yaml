@@ -1,0 +1,42 @@
+appId: com.example.app
+---
+
+- tapOn: 
+   id: "main"
+- tapOn: 
+   id: "edtBillId"
+- inputText: "9157197136"
+
+- tapOn: 
+    id: "submit"
+
+- assertNotVisible: "message"
+- back
+- tapOn: 
+   id: "save"
+- runFlow:
+    when:
+       visible: "نام قبض"
+   
+    file: D:\test\Maestrooo\bill\saveBill.yaml
+
+- assertVisible:
+    id: "g1"
+- tapOn:
+    id: "g1"
+- tapOn: 
+   id: "edtBillId"
+- inputText: "9157197136"
+
+- tapOn: 
+    id: "submit"
+- assertVisible:
+    id: "message"
+- back
+- back
+- runFlow:
+    when:
+       visible: "قبض گاز"
+   
+    commands: 
+      - back

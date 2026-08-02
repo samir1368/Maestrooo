@@ -3,6 +3,24 @@ appId: ir.tgbs.peccharge.web
 - launchApp:
     clearState: false
 
+- runFlow:
+    when:
+      visible:
+        id: "cancel"
+    commands: 
+        - tapOn:
+            id: "cancel"
+#remain service
+- assertVisible:
+    id: "mid_button"
+    index: 1
+- runFlow:
+    when:
+       visible: 
+         id: "mid_button"
+         index: 1
+    commands: 
+    file: D:\test\Maestrooo\remain\remian.yaml
 #package charge
 - assertVisible:
     id: "left_button"
@@ -26,20 +44,7 @@ appId: ir.tgbs.peccharge.web
           index: 1
     commands: 
     file: D:\test\Maestrooo\package\package.yaml
-
-#remain service
-- assertVisible:
-    id: "mid_button"
-    index: 1
-- runFlow:
-    when:
-       visible: 
-         id: "mid_button"
-         index: 1
-    commands: 
-    file: D:\test\Maestrooo\remain\remian.yaml
-
-#package card to card
+# card to card
 - assertVisible:
     id: "right_icon"
     index: 0
@@ -50,5 +55,19 @@ appId: ir.tgbs.peccharge.web
           index: 0
     commands: 
     file: D:\test\Maestrooo\cardTocard\cardTocard.yaml
+
+#bill service
+- assertVisible:
+    id: "mid_button"
+- runFlow:
+    when:
+       visible: 
+         id: "mid_button"
+         index: 0
+   
+    file: D:\test\Maestrooo\bill\billList.yaml
+
+
+
 
 

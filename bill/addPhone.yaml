@@ -1,0 +1,32 @@
+appId: com.example.app
+---
+
+- tapOn: 
+   id: "main"
+- tapOn: 
+   id: "mobileNumber"
+- inputText: "02144146339"
+
+- tapOn: 
+    id: "submit"
+
+- assertNotVisible: "message"
+- back
+- runFlow:
+    when:
+       visible: "اطلاعات قبض"
+    commands: 
+      - back
+
+- tapOn: 
+   id: "save"
+- runFlow:
+    when:
+       visible: "نام قبض"
+   
+    file: D:\test\Maestrooo\bill\saveBill.yaml
+- runFlow:
+    when:
+       visible: "تلفن ثابت"
+    commands: 
+        - back

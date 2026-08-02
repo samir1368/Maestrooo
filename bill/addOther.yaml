@@ -1,0 +1,59 @@
+appId: com.example.app
+---
+- tapOn: 
+   id: "main"
+- assertVisible:
+    id: "recyclerView"
+- tapOn: "پرداخت با شناسه"
+ 
+- tapOn: 
+   id: "edtBillId"
+- inputText: "1561377299219"
+- tapOn: 
+   id: "payId"
+- inputText: "5555454545"
+- tapOn: 
+    id: "submit"
+- back
+
+- tapOn: 
+   id: "save"
+- runFlow:
+    when:
+       visible: "نام قبض"
+   
+    file: D:\test\Maestrooo\bill\saveBill.yaml
+- back
+- tapOn:
+    id: "btn6"
+- tapOn: 
+   id: "main"
+- tapOn: "جریمه وسایل نقلیه"
+- tapOn: 
+   id: "edtBillId"
+- inputText: "1561377299219"
+- tapOn: 
+   id: "payId"
+- inputText: "5555454545"
+- tapOn: 
+    id: "submit"
+- assertVisible:
+    id: "container"
+- extendedWaitUntil:
+    visible:
+      id: "submit"
+    timeout: 3000
+
+- back
+- runFlow:
+    when:
+       visible: "جریمه وسایل نقلیه"
+   
+    commands:
+      - back
+- tapOn:
+    id: "btn6"
+- tapOn: 
+   id: "main"
+- tapOn: "عوارض ملکی"
+

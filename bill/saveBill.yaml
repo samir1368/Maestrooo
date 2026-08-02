@@ -1,0 +1,18 @@
+appId: com.example.app
+---
+
+
+
+- assertVisible: 
+    id: "cardName"
+
+- tapOn: 
+    id: "cardName"
+- inputText: "test"
+
+- tapOn: 
+    id: "done"
+
+- assertNotVisible:
+    id: "message"
+- back

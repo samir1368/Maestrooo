@@ -37,10 +37,10 @@ appId: ir.tgbs.peccharge.web
           index: 0
 # - back
 
-- runFlow:
-    when:
-      visible: "ثبت کارت در شاپرک"
-    commands:
-      - tapOn:
-          id: "rlCall"
+#- runFlow:
+    #when:
+     # visible: "ثبت کارت در شاپرک"
+    #commands:
+      #- tapOn:
+       #   id: "rlCall"
 

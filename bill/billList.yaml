@@ -1,0 +1,93 @@
+appId: com.example.app
+---
+
+- tapOn:
+    id: "mid_button"
+    index: 0
+# موبایل
+- assertVisible: 
+    id: "btn1"
+- tapOn:
+    id: "btn1"
+- runFlow:
+    when:
+      visible: "انتخاب قبض"
+    file: D:\test\Maestrooo\bill\addMobile.yaml 
+#- tapOn:
+ #   id: "contacts"
+
+#- runFlow:
+ #   when:
+  #    visible:  "Select contact"
+   # commands: 
+    #    - tapOn: "C1"
+   
+
+#- tapOn:
+ #   id: "submit"
+- assertNotVisible:
+    id: "message"
+#- back
+- back
+- tapOn:
+    id: "btn1"
+- assertVisible:
+    id: "recyclerView"
+- tapOn:
+    id: "parent"
+        
+- assertNotVisible:
+    id: "message"
+- back
+
+#برق
+- assertVisible: 
+    id: "btn2"
+- tapOn:
+    id: "btn2"
+- runFlow:
+    when:
+      visible: "انتخاب قبض"
+    file: D:\test\Maestrooo\bill\addBargh.yaml 
+#گاز
+- assertVisible: 
+    id: "btn3"
+- tapOn:
+    id: "btn3"
+- runFlow:
+    when:
+      visible: "انتخاب قبض"
+    file: D:\test\Maestrooo\bill\addGaz.yaml 
+
+
+
+#تلفن
+- assertVisible: 
+    id: "btn4"
+- tapOn:
+    id: "btn4"
+- runFlow:
+    when:
+      visible: "انتخاب قبض"
+    file: D:\test\Maestrooo\bill\addPhone.yaml 
+#آب
+- assertVisible: 
+    id: "btn5"
+- tapOn:
+    id: "btn5"
+- runFlow:
+    when:
+      visible: "انتخاب قبض"
+    file: D:\test\Maestrooo\bill\addWater.yaml 
+
+#سایر
+- assertVisible: 
+    id: "btn6"
+- tapOn:
+    id: "btn6"
+- runFlow:
+    when:
+      visible: "انتخاب قبض"
+    file: D:\test\Maestrooo\bill\addOther.yaml 
+
+

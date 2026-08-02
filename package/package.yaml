@@ -33,14 +33,13 @@ appId: ir.tgbs.peccharge.web
 - back
 
 
-- tapOn:
-    id: "contactsButton"
+#- tapOn:
+ #   id: "contactsButton"
 
 
-- tapOn:
-    id: "main"
+#- tapOn:
+ #   id: "main"
 
-- assertVisible: "Select Contact"
 - runFlow:
     when:
       visible: "Just once"
@@ -50,20 +49,21 @@ appId: ir.tgbs.peccharge.web
        
 
 
-- runFlow:
-    when:
-      notVisible: "Just once"
+#- runFlow:
+ #   when:
+  #    notVisible: "Just once"
       
-    commands:
-        - tapOn: ".*Sa.*"
+   # commands:
+    #    - tapOn: ".*Sa.*"
        
 
 
 
-- tapOn: "تایید و ادامه"
+#- tapOn: "تایید و ادامه"
 #- tapOn: 
  #   id: "creditSimButton"
-
+#- back
+- tapOn: "تایید و ادامه"
 - runFlow:
     when:
       visible: 
