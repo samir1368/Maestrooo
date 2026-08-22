@@ -1,16 +1,16 @@
-appId: com.example.app
+appId: ir.tgbs.peccharge.web
 ---
 
 - tapOn: 
    id: "main"
 - tapOn: 
    id: "mobileNumber"
-- inputText: "02144146339"
+- inputText: ${PHONE_BILL_NUMBER}
 
 - tapOn: 
     id: "submit"
 
-- assertNotVisible: "message"
+- assertVisible: "اطلاعات قبض"
 - back
 - runFlow:
     when:
@@ -22,9 +22,8 @@ appId: com.example.app
    id: "save"
 - runFlow:
     when:
-       visible: "نام قبض"
-   
-    file: D:\test\Maestrooo\bill\saveBill.yaml
+      visible: "نام قبض"
+    file: saveBill.yaml
 - runFlow:
     when:
        visible: "تلفن ثابت"

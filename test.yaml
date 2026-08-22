@@ -1,2 +1,9 @@
 
 
+appId: ir.tgbs.peccharge.web
+
+---
+
+- launchApp:
+    clearState: false
+- runFlow: main.yaml

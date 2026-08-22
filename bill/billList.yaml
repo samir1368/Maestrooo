@@ -1,4 +1,4 @@
-appId: com.example.app
+appId: ir.tgbs.peccharge.web
 ---
 
 - tapOn:
@@ -9,10 +9,8 @@ appId: com.example.app
     id: "btn1"
 - tapOn:
     id: "btn1"
-- runFlow:
-    when:
-      visible: "انتخاب قبض"
-    file: D:\test\Maestrooo\bill\addMobile.yaml 
+- assertVisible: "انتخاب قبض"
+- runFlow: addMobile.yaml
 #- tapOn:
  #   id: "contacts"
 
@@ -25,8 +23,6 @@ appId: com.example.app
 
 #- tapOn:
  #   id: "submit"
-- assertNotVisible:
-    id: "message"
 #- back
 - back
 - tapOn:
@@ -36,8 +32,6 @@ appId: com.example.app
 - tapOn:
     id: "parent"
         
-- assertNotVisible:
-    id: "message"
 - back
 
 #برق
@@ -45,49 +39,40 @@ appId: com.example.app
     id: "btn2"
 - tapOn:
     id: "btn2"
-- runFlow:
-    when:
-      visible: "انتخاب قبض"
-    file: D:\test\Maestrooo\bill\addBargh.yaml 
-#گاز
-- assertVisible: 
-    id: "btn3"
-- tapOn:
-    id: "btn3"
-- runFlow:
-    when:
-      visible: "انتخاب قبض"
-    file: D:\test\Maestrooo\bill\addGaz.yaml 
-
-
-
+- assertVisible: "انتخاب قبض"
+- runFlow: addBargh.yaml
 #تلفن
 - assertVisible: 
     id: "btn4"
 - tapOn:
     id: "btn4"
-- runFlow:
-    when:
-      visible: "انتخاب قبض"
-    file: D:\test\Maestrooo\bill\addPhone.yaml 
+- assertVisible: "انتخاب قبض"
+- runFlow: addPhone.yaml
 #آب
 - assertVisible: 
     id: "btn5"
 - tapOn:
     id: "btn5"
-- runFlow:
-    when:
-      visible: "انتخاب قبض"
-    file: D:\test\Maestrooo\bill\addWater.yaml 
+- assertVisible: "انتخاب قبض"
+- runFlow: addWater.yaml
 
 #سایر
 - assertVisible: 
     id: "btn6"
 - tapOn:
     id: "btn6"
-- runFlow:
-    when:
-      visible: "انتخاب قبض"
-    file: D:\test\Maestrooo\bill\addOther.yaml 
+- assertVisible: "انتخاب قبض"
+- runFlow: addOther.yaml
+#گاز
+- assertVisible: 
+    id: "btn3"
+- tapOn:
+    id: "btn3"
+- assertVisible: "انتخاب قبض"
+- runFlow: addGaz.yaml
+
+
+
+
 
 

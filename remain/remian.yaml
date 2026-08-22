@@ -15,11 +15,8 @@ appId: ir.tgbs.peccharge.web
 - assertVisible: 
     id: "newCard"
 
-- runFlow:
-    when:
-       visible: "انتخاب کارت"
-    commands: 
-    file: ../bsh/selectCard.yaml
+- assertVisible: "انتخاب کارت"
+- runFlow: ../bsh/selectCard.yaml
 
 - runFlow:
     when:

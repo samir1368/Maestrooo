@@ -8,7 +8,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "mobileNumber"
-- inputText: "09029868952"
+- inputText: ${TEST_MOBILE}
 - tapOn: "تایید و ادامه"
 
 - tapOn:
@@ -24,7 +24,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "amount"
-- inputText: "100"
+- inputText: ${INVALID_LOW_CHARGE_AMOUNT}
 - tapOn: "تایید و ادامه"
 - tapOn:
     id: "amount"
@@ -32,7 +32,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "amount"
-- inputText: "2000000"
+- inputText: ${INVALID_HIGH_CHARGE_AMOUNT}
 - tapOn: "تایید و ادامه"
 - back
 
@@ -41,7 +41,7 @@ appId: ir.tgbs.peccharge.web
 - eraseText
 - tapOn:
     id: "amount"
-- inputText: "199990"
+- inputText: ${CHARGE_AMOUNT}
 - tapOn: "تایید و ادامه"
 
 - tapOn:
@@ -50,7 +50,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "amount"
-- inputText: "9999999999"
+- inputText: ${INVALID_EXTREME_CHARGE_AMOUNT}
 - tapOn: "تایید و ادامه"
 - back
 
@@ -84,9 +84,10 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "mobileNumber"
-- inputText: "09029868952"
+- inputText: ${TEST_MOBILE}
 - tapOn: "200,000 ریال"
 - tapOn: "تایید و ادامه"
+##- assertVisible: ${CHARGE_SUCCESS_TEXT}
 - back
 - back
 

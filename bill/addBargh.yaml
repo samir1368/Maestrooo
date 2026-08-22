@@ -1,24 +1,25 @@
-appId: com.example.app
+appId: ir.tgbs.peccharge.web
 ---
 
 - tapOn: 
    id: "main"
 - tapOn: 
    id: "edtBillId"
-- inputText: "9429190504123"
+- inputText: ${ELECTRICITY_BILL_ID}
 
 - tapOn: 
     id: "submit"
 
-- assertNotVisible: "message"
+- assertVisible:
+    id: "save"
 - back
 - tapOn: 
    id: "save"
+
 - runFlow:
     when:
-       visible: "نام قبض"
-   
-    file: D:\test\Maestrooo\bill\saveBill.yaml
+      visible: "نام قبض"
+    file: saveBill.yaml
 
 - runFlow:
     when:

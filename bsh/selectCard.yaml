@@ -7,7 +7,6 @@ appId: ir.tgbs.peccharge.web
 - runFlow:
     when:
        visible: "افزودن کارت"
-    commands: 
     file: addCard.yaml
 
         

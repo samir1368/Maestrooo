@@ -4,7 +4,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "amountView"
-- inputText: "2"
+- inputText: ${INVALID_LOW_AMOUNT}
 
 - tapOn:
     id: "butonEstelam"
@@ -13,10 +13,10 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "cancel"
 
-- eraseText
 - tapOn:
     id: "amountView"
-- inputText: "2000000000000"
+- eraseText
+- inputText: ${INVALID_HIGH_AMOUNT}
 - tapOn:
     id: "butonEstelam"
 
@@ -25,8 +25,7 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "cancel"
 
-- eraseText
 - tapOn:
     id: "amountView"
-- inputText: "2000000"
-
+- eraseText
+- inputText: ${TRANSFER_AMOUNT}

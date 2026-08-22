@@ -3,16 +3,16 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: cardName
-- inputText: "sami"
+- inputText: ${TEST_CARD_NAME}
 - tapOn:
     id: cardNumber
-- inputText: "6221061237612546"
+- inputText: ${SOURCE_CARD}
 
 - tapOn:
     id: exp_m
-- inputText: "02"
+- inputText: ${SOURCE_CARD_EXP_MONTH}
 - tapOn:
     id: exp_y
-- inputText: "02"
+- inputText: ${SOURCE_CARD_EXP_YEAR}
 - tapOn:
     id: txtDone

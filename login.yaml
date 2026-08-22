@@ -5,15 +5,17 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: edtMobile
-- inputText: "09124168652"
+- inputText: ${LOGIN_MOBILE}
 - tapOn:
     id: btnRegister
 
 - tapOn:
     id: edtMobile
-- inputText: "123456"
+- inputText: ${TEST_OTP}
 - tapOn:
     id: btnRegister
-- back
+- assertVisible:
+    id: "mid_button"
+
 
 

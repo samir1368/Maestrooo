@@ -3,32 +3,20 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
     id: "right_icon"
     index: 0
-- runFlow:
-    when:
-      visible: "انتخاب کارت مبدا"
+- assertVisible: "انتخاب کارت مبدا"
+- runFlow: selectCard.yaml
 
-    file: selectCard.yaml
+- assertVisible: "انتخاب کارت مقصد"
+- tapOn:
+    id: "destinationCardView"
 
-- runFlow:
-    when:
-      visible: "انتخاب کارت مقصد"
-    commands:
-      - tapOn:
-         id: "destinationCardView"
-    
-
-- runFlow:
-    when:
-      visible: "کارت مقصد جدید"
-
-    file: selectCard.yaml
+- assertVisible: "کارت مقصد جدید"
+- runFlow: selectCard.yaml
 
 
 
-- runFlow:
-    when:
-      visible: "مبلغ انتقال"
-    file: D:\test\Maestrooo\cardTocard\checkAmount.yaml
+- assertVisible: "مبلغ انتقال"
+- runFlow: checkAmount.yaml
 
 
 
@@ -40,13 +28,12 @@ appId: ir.tgbs.peccharge.web
     id: "expandBtn"
 - tapOn:
     id: "descView"
-- inputText: "2000000 hjk khj kjh jhkj khjh kjh kjh jkh jh kh hjkh jh jhjhjhyg yyu y yyg jjhg hjgjhg hgy ygyug yugyg ug"
+- inputText: ${TRANSFER_DESCRIPTION}
 
 
 - tapOn:
     id: "butonEstelam"
+
 - back
 - back
-
-
 

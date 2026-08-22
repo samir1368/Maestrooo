@@ -1,4 +1,4 @@
-appId: com.example.app
+appId: ir.tgbs.peccharge.web
 ---
 
 
@@ -8,11 +8,10 @@ appId: com.example.app
 
 - tapOn: 
     id: "cardName"
-- inputText: "test"
+- inputText: ${TEST_BILL_NAME}
 
 - tapOn: 
     id: "done"
 
-- assertNotVisible:
-    id: "message"
+- assertVisible: ${TEST_BILL_NAME}
 - back

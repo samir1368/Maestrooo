@@ -1,7 +1,6 @@
 appId: ir.tgbs.peccharge.web
 ---
-- launchApp:
-    clearState: false
+##- runFlow: login.yaml
 
 - runFlow:
     when:
@@ -10,63 +9,31 @@ appId: ir.tgbs.peccharge.web
     commands: 
         - tapOn:
             id: "cancel"
+# card to card
+- assertVisible:
+    id: "right_icon"
+    index: 0
+- runFlow: cardTocard/cardTocard.yaml
 #remain service
 - assertVisible:
     id: "mid_button"
     index: 1
-- runFlow:
-    when:
-       visible: 
-         id: "mid_button"
-         index: 1
-    commands: 
-    file: D:\test\Maestrooo\remain\remian.yaml
-#package charge
+- runFlow: remain/remian.yaml
+# charge
 - assertVisible:
     id: "left_button"
     index: 0
-- runFlow:
-    when:
-       visible: 
-          id: "left_button"
-          index: 0
-    commands: 
-    file: D:\test\Maestrooo\charge\charge.yaml
+- runFlow: charge/charge.yaml
 
 #package service
 - assertVisible:
     id: "left_button"
     index: 1
-- runFlow:
-    when:
-       visible: 
-          id: "left_button"
-          index: 1
-    commands: 
-    file: D:\test\Maestrooo\package\package.yaml
-# card to card
-- assertVisible:
-    id: "right_icon"
-    index: 0
-- runFlow:
-    when:
-       visible: 
-          id: "right_icon"
-          index: 0
-    commands: 
-    file: D:\test\Maestrooo\cardTocard\cardTocard.yaml
-
+- runFlow: package/package.yaml
 #bill service
 - assertVisible:
     id: "mid_button"
-- runFlow:
-    when:
-       visible: 
-         id: "mid_button"
-         index: 0
-   
-    file: D:\test\Maestrooo\bill\billList.yaml
-
+- runFlow: bill/billList.yaml
 
 
 

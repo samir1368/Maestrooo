@@ -1,4 +1,4 @@
-appId: com.example.app
+appId: ir.tgbs.peccharge.web
 ---
 - tapOn: 
    id: "main"
@@ -8,21 +8,18 @@ appId: com.example.app
  
 - tapOn: 
    id: "edtBillId"
-- inputText: "1561377299219"
+- inputText: ${OTHER_BILL_ID}
 - tapOn: 
    id: "payId"
-- inputText: "5555454545"
+- inputText: ${OTHER_PAYMENT_ID}
 - tapOn: 
     id: "submit"
 - back
 
 - tapOn: 
    id: "save"
-- runFlow:
-    when:
-       visible: "نام قبض"
-   
-    file: D:\test\Maestrooo\bill\saveBill.yaml
+- assertVisible: "نام قبض"
+- runFlow: saveBill.yaml
 - back
 - tapOn:
     id: "btn6"
@@ -31,10 +28,10 @@ appId: com.example.app
 - tapOn: "جریمه وسایل نقلیه"
 - tapOn: 
    id: "edtBillId"
-- inputText: "1561377299219"
+- inputText: ${VEHICLE_FINE_BILL_ID}
 - tapOn: 
    id: "payId"
-- inputText: "5555454545"
+- inputText: ${VEHICLE_FINE_PAYMENT_ID}
 - tapOn: 
     id: "submit"
 - assertVisible:

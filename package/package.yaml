@@ -23,7 +23,7 @@ appId: ir.tgbs.peccharge.web
 
 - tapOn:
     id: "mobileNumber"
-- inputText: "09029868952"
+- inputText: ${TEST_MOBILE}
 
 
 - assertVisible:
@@ -64,12 +64,9 @@ appId: ir.tgbs.peccharge.web
  #   id: "creditSimButton"
 #- back
 - tapOn: "تایید و ادامه"
-- runFlow:
-    when:
-      visible: 
-        id : "creditSimButton"
-     # visible:  "تایید و ادامه"
-    file: packagetwo.yaml
+- assertVisible:
+    id: "creditSimButton"
+- runFlow: packagetwo.yaml
 
 #- tapOn: "تایید و ادامه"
 #- tapOn:

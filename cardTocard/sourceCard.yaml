@@ -4,4 +4,4 @@ appId: ir.tgbs.peccharge.web
 - tapOn:
           id: "cardNumber"
 
-- inputText: "6221061237612546"
+- inputText: ${SOURCE_CARD}
