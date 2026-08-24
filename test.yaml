@@ -1,6 +1,6 @@
 
 
-appId: ir.tgbs.peccharge.web
+appId: ${APP_ID}
 
 ---
 

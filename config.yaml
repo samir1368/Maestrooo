@@ -1,7 +1,7 @@
-appId: ir.tgbs.peccharge
 flows:
   - test.yaml
 env:
+  APP_ID: "ir.tgbs.peccharge"
   LOGIN_MOBILE: "09124168652"
   TEST_OTP: "123456"
   TEST_MOBILE: "09029868952"

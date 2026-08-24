@@ -1,4 +1,4 @@
-appId: ir.tgbs.peccharge.web
+appId: ${APP_ID}
 ---
 ##- runFlow: login.yaml
 
@@ -34,7 +34,6 @@ appId: ir.tgbs.peccharge.web
 - assertVisible:
     id: "mid_button"
 - runFlow: bill/billList.yaml
-
 
 
 
