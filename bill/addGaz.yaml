@@ -9,15 +9,24 @@ appId: ${APP_ID}
 
 - tapOn: 
     id: "submit"
-#- runFlow:
-    #when:
-      #visible:
-     #   id: "cancel"
-    #commands: 
-   #     - tapOn:
-  #          id: "cancel"
 
-#- back
+
+- runFlow:
+    when:
+      visible:
+        id: "cancel"
+    commands:
+      - takeScreenshot:
+          path: "warnings/server-error-gaz"
+
+- runFlow:
+    when:
+      visible:
+        id: "cancel"
+    commands: 
+        - tapOn:
+            id: "cancel"
+- back
 - runFlow:
     when:
        visible: "اطلاعات قبض"

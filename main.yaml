@@ -29,6 +29,8 @@ appId: ${APP_ID}
     id: "right_icon"
     index: 0
 - runFlow: cardTocard/cardTocard.yaml
+
+
 #bill service
 - assertVisible:
     id: "mid_button"

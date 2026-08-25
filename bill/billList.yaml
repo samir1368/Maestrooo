@@ -3,6 +3,13 @@ appId: ${APP_ID}
 - tapOn:
     id: "mid_button"
     index: 0
+#گاز
+- assertVisible: 
+    id: "btn3"
+- tapOn:
+    id: "btn3"
+- assertVisible: "انتخاب قبض"
+- runFlow: addGaz.yaml
 #تلفن
 - assertVisible: 
     id: "btn4"
@@ -60,13 +67,7 @@ appId: ${APP_ID}
 - tapOn:
     id: "btn6"
 - runFlow: addOther.yaml
-#گاز
-- assertVisible: 
-    id: "btn3"
-- tapOn:
-    id: "btn3"
-- assertVisible: "انتخاب قبض"
-- runFlow: addGaz.yaml
+
 
 
 
