@@ -11,7 +11,10 @@ appId: ${APP_ID}
     id: "mobileNumber"
 - eraseText 
 - eraseText: 100
-
+- tapOn:
+    id: "mobileNumber"
+- inputText: ""
+- eraseText 
 - tapOn: "تایید و ادامه"
 - assertVisible:
     id: "creditSimButton"
@@ -21,6 +24,10 @@ appId: ${APP_ID}
 - assertVisible:
     id: "container"
 
+- tapOn:
+    id: "mobileNumber"
+- inputText: ""
+- eraseText 
 - tapOn:
     id: "mobileNumber"
 - inputText: ${TEST_MOBILE}

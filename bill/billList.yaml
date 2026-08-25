@@ -1,9 +1,22 @@
 appId: ${APP_ID}
 ---
-
 - tapOn:
     id: "mid_button"
     index: 0
+#تلفن
+- assertVisible: 
+    id: "btn4"
+- tapOn:
+    id: "btn4"
+- assertVisible: "انتخاب قبض"
+- runFlow: addPhone.yaml
+#آب
+- assertVisible: 
+    id: "btn5"
+- tapOn:
+    id: "btn5"
+- assertVisible: "انتخاب قبض"
+- runFlow: addWater.yaml
 # موبایل
 - assertVisible: 
     id: "btn1"
@@ -41,27 +54,11 @@ appId: ${APP_ID}
     id: "btn2"
 - assertVisible: "انتخاب قبض"
 - runFlow: addBargh.yaml
-#تلفن
-- assertVisible: 
-    id: "btn4"
-- tapOn:
-    id: "btn4"
-- assertVisible: "انتخاب قبض"
-- runFlow: addPhone.yaml
-#آب
-- assertVisible: 
-    id: "btn5"
-- tapOn:
-    id: "btn5"
-- assertVisible: "انتخاب قبض"
-- runFlow: addWater.yaml
-
 #سایر
 - assertVisible: 
     id: "btn6"
 - tapOn:
     id: "btn6"
-- assertVisible: "انتخاب قبض"
 - runFlow: addOther.yaml
 #گاز
 - assertVisible: 
@@ -70,9 +67,6 @@ appId: ${APP_ID}
     id: "btn3"
 - assertVisible: "انتخاب قبض"
 - runFlow: addGaz.yaml
-
-
-
 
 
 

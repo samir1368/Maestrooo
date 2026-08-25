@@ -9,3 +9,6 @@ Run the suite from this directory:
 ```powershell
 maestro test .
 ```
+# کارتها باید شاپرکی شده باشند
+# کارت مبدا و مقصد رو باید تو لیست هاتون داشته باشید
+# شروع تست از کلاس test.yaml است

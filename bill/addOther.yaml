@@ -23,8 +23,8 @@ appId: ${APP_ID}
 - back
 - tapOn:
     id: "btn6"
-- tapOn: 
-   id: "main"
+#- tapOn: 
+ #  id: "main"
 - tapOn: "جریمه وسایل نقلیه"
 - tapOn: 
    id: "edtBillId"
@@ -50,7 +50,7 @@ appId: ${APP_ID}
       - back
 - tapOn:
     id: "btn6"
-- tapOn: 
-   id: "main"
+
 - tapOn: "عوارض ملکی"
+- back
 

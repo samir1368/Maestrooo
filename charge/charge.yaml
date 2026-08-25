@@ -8,9 +8,16 @@ appId: ${APP_ID}
 
 - tapOn:
     id: "mobileNumber"
+- eraseText
+- tapOn:
+    id: "mobileNumber"
+- inputText: ""
+- eraseText
 - inputText: ${TEST_MOBILE}
 - tapOn: "تایید و ادامه"
-
+- scrollUntilVisible:
+    element:
+      id: "amount"
 - tapOn:
     id: "amount"
 - inputText: ""

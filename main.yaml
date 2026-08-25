@@ -9,11 +9,6 @@ appId: ${APP_ID}
     commands: 
         - tapOn:
             id: "cancel"
-# card to card
-- assertVisible:
-    id: "right_icon"
-    index: 0
-- runFlow: cardTocard/cardTocard.yaml
 #remain service
 - assertVisible:
     id: "mid_button"
@@ -24,16 +19,27 @@ appId: ${APP_ID}
     id: "left_button"
     index: 0
 - runFlow: charge/charge.yaml
-
 #package service
 - assertVisible:
     id: "left_button"
     index: 1
 - runFlow: package/package.yaml
+# card to card
+- assertVisible:
+    id: "right_icon"
+    index: 0
+- runFlow: cardTocard/cardTocard.yaml
 #bill service
 - assertVisible:
     id: "mid_button"
 - runFlow: bill/billList.yaml
+
+
+
+
+
+
+
 
 
 

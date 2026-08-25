@@ -9,10 +9,21 @@ appId: ${APP_ID}
 
 - tapOn: 
     id: "submit"
+#- runFlow:
+    #when:
+      #visible:
+     #   id: "cancel"
+    #commands: 
+   #     - tapOn:
+  #          id: "cancel"
 
-- assertVisible:
-    id: "save"
-- back
+#- back
+- runFlow:
+    when:
+       visible: "اطلاعات قبض"
+   
+    commands: 
+      - back
 - tapOn: 
    id: "save"
 - runFlow:
